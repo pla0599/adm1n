@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 #coding=utf-8
 #用crontab跑* * * * * /usr/bin/python3 /root/ddns.py > /dev/null 2>&1
+#安装依赖：
+#pip3 install aliyun-python-sdk-core-v3 
+#pip3 install aliyun-python-sdk-domain 
+#pip3 install aliyun-python-sdk-alidns 
+#pip3 install requests
 from aliyunsdkcore.client import AcsClient
 from aliyunsdkcore.acs_exception.exceptions import ClientException
 from aliyunsdkcore.acs_exception.exceptions import ServerException
